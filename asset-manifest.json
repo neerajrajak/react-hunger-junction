@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/react-hunger-junction/static/css/main.bc363133.css",
+    "main.js": "/react-hunger-junction/static/js/main.019592f4.js",
+    "static/js/48.990ccf6f.chunk.js": "/react-hunger-junction/static/js/48.990ccf6f.chunk.js",
+    "static/js/659.b99a5e25.chunk.js": "/react-hunger-junction/static/js/659.b99a5e25.chunk.js",
+    "index.html": "/react-hunger-junction/index.html",
+    "main.bc363133.css.map": "/react-hunger-junction/static/css/main.bc363133.css.map",
+    "main.019592f4.js.map": "/react-hunger-junction/static/js/main.019592f4.js.map",
+    "48.990ccf6f.chunk.js.map": "/react-hunger-junction/static/js/48.990ccf6f.chunk.js.map",
+    "659.b99a5e25.chunk.js.map": "/react-hunger-junction/static/js/659.b99a5e25.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bc363133.css",
+    "static/js/main.019592f4.js"
+  ]
+}
