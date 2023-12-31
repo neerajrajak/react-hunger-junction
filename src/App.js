@@ -1,6 +1,6 @@
 import React, { Suspense, lazy, useEffect, useState } from "react";
 import ReactDOM from "react-dom/client";
-import { Provider } from 'react-redux';
+import { Provider } from "react-redux";
 import Header from "./components/Header";
 import Body from "./components/Body";
 import { RouterProvider, Outlet, createBrowserRouter } from "react-router-dom";
@@ -16,7 +16,7 @@ import appStore from "./store/appStore";
 
 const Grocery = lazy(() => import("./components/Grocery"));
 
-const Cart = lazy(()=> import("./components/CartDetails"));
+const Cart = lazy(() => import("./components/CartDetails"));
 
 const AppLayout = () => {
   const [userName, setUserName] = useState("Guest User");
@@ -25,18 +25,18 @@ const AppLayout = () => {
     setTimeout(() => setUserName("Neeraj Rajak"), 3000);
   }, []);
   return (
-   <Provider store={appStore}>
-     <UserContext.Provider value={{ loggedInUser: userName, setUserName }}>
-      <div className="app">  
-          <Header />     
-        <Outlet />
-      </div>
-    </UserContext.Provider>
-   </Provider>
+    <Provider store={appStore}>
+      <UserContext.Provider value={{ loggedInUser: userName, setUserName }}>
+        <div className="app">
+          <Header />
+          <Outlet />
+        </div>
+      </UserContext.Provider>
+    </Provider>
   );
 };
 
-const appRouter = createBrowserRouter([
+const routes = [
   {
     path: "/",
     element: <AppLayout />,
@@ -76,8 +76,10 @@ const appRouter = createBrowserRouter([
     ],
     errorElement: <Error />,
   },
-], {
-  // basename: "/react-food-app/"
-} );
+];
+
+const appRouter = createBrowserRouter(routes, {
+  basename: "/react-hunger-junction",
+});
 
 export default appRouter;
