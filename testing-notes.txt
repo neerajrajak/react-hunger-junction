@@ -1,0 +1,12 @@
+
+
+Types of testing
+- Unit testing
+- Integration testing
+- End to End testing - e2e
+
+
+Steps to add testing dependencies
+- install react testing library
+- install jest
+- install babel testing and add babel config
